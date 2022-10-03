@@ -8,14 +8,14 @@ const {EmailSender} = require("./mailer.js");
 const port = process.env.PORT || 2000;
 
 
-const corsOptions = {
-    origin: process.env.REACT_APP_CLIENT_URL,
-    methods: "POST",
-    // allowedHeaders: "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-}
+// const corsOptions = {
+//     origin: process.env.REACT_APP_CLIENT_URL,
+//     methods: "POST",
+//     // allowedHeaders: "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+// }
 
 // Active cors
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Parse les données
 app.use(express.json());
