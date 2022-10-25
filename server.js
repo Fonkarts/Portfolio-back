@@ -35,7 +35,7 @@ router.post("/mail", async (req, res) => {
             res.status(403).json({ message: "Non autorisé !" });
         }
     } catch (error) {
-      res.status(404).json({ message: "Message non envoyé ❌" });
+      res.status(404).json({ message: "Message non envoyé" });
     }
   });
 
